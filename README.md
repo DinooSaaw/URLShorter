@@ -67,9 +67,13 @@ The URL shortener provides the following API endpoints:
 
 `GET /api/shorten?url=<your long url>`: Create a new shortened URL for the given long URL.
 
+`GET /api/auth?clientId=<clientId>`: Create a new auth token for the given clientId.
+
   
 
 `GET /<short code>`: Redirect to the original long URL corresponding to the given short code.
+
+`DEL /<short code>`: Delete a shorten url authorization header with valid auth token must be added.
 
   
 
